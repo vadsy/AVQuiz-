@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorBackground"
+        app:srcCompat="@drawable/sign_in" />
+
+    <EditText
+        android:id="@+id/usernameet"
+        android:layout_width="297dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="184dp"
+        android:background="@drawable/round"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+
+        android:ems="10"
+        android:hint="      Username"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+
+    <EditText
+        android:id="@+id/passwordet"
+        android:layout_width="297dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="249dp"
+        android:background="@drawable/round"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:ems="10"
+        android:hint="      Password"
+        android:inputType="textPersonName"
+        android:textStyle="bold"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/forgottv"
+        android:fontFamily="@font/days_one"
+        android:layout_toStartOf="@+id/forgottv"
+
+        android:text="Forgot :"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/forgottv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/usernameet"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="234dp"
+        android:fontFamily="@font/days_one"
+        android:text=" Username/Password?"
+        android:textColor="@color/colorBackground"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/SignInbt"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="131dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/colorBackground"
+        android:fontFamily="@font/days_one"
+        android:shadowRadius="5"
+        android:text="SIGN IN"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp"
+        android:fontFamily="@font/days_one"
+        android:text="Don't have a account?"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/signuptv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:fontFamily="@font/days_one"
+        android:text="SIGN UP NOW"
+        android:textColor="@color/colorBackground"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+</android.widget.RelativeLayout>
