@@ -16,10 +16,11 @@ public class Catalog extends AppCompatActivity {
         setContentView(R.layout.activity_catalog);
 
         recyclerView = (RecyclerView)findViewById(R.id.rv);
-        ItemData itemdatas[]= {new ItemData("Java",R.drawable.java_trans)
-                ,new ItemData("Python",R.drawable.python_trans)
-                ,new ItemData("Machine Learning",R.drawable.machine_trans)
-                ,new ItemData("PHP",R.drawable.php_trans)};
+        ItemData itemdatas[]= {new ItemData("Java",R.drawable.javao1)
+                ,new ItemData("Python",R.drawable.python)
+                ,new ItemData("Machine Learning",R.drawable.machinelearning)
+                ,new ItemData("PHP",R.drawable.php)
+                ,new ItemData("Android",R.drawable.android)};
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         MyAdapter myAdapter =new MyAdapter(itemdatas);
